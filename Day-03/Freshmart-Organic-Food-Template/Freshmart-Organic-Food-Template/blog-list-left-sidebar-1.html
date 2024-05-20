@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	
+
+<head>
+		<!-- Basic Page Needs -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>FreshMart - Organic, Fresh Food, Farm Store HTML Template</title>
+		
+		<meta name="keywords" content="Organic, Fresh Food, Farm Store">
+		<meta name="description" content="FreshMart - Organic, Fresh Food, Farm Store HTML Template">
+		<meta name="author" content="tivatheme">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+		
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700" rel="stylesheet">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="libs/font-material/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+		<link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+		<link rel="stylesheet" href="libs/nivo-slider/css/style.css">
+		<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="libs/slider-range/css/jslider.css">
+		
+		<!-- Template CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/reponsive.css">
+	</head>
+	
+	<body class="home home-1">
+		<div id="all">
+			<!-- Header -->
+			<header id="header">
+				<!-- Topbar -->
+				<div class="topbar">
+					<!-- Close Topbar -->
+					<div class="close-topbar">
+						<i class="zmdi zmdi-close"></i>
+					</div>
+					
+					<!-- Topbar Content -->
+					<div class="container topbar-content">
+						<div class="row">
+							<!-- Topbar Left -->
+							<div class="col-md-7 col-sm-7 col-xs-12">
+								<div class="topbar-left d-flex">
+									<div class="email">
+										<i class="fa fa-envelope" aria-hidden="true"></i>Email: tivatheme@gmail.com
+									</div>
+									<div class="skype">
+										<i class="fa fa-skype" aria-hidden="true"></i>Skype: tivatheme
+									</div>
+								</div>
+							</div>
+							
+							<!-- Topbar Right -->
+							<div class="col-md-5 col-sm-5 col-xs-12">
+								<div class="topbar-right d-flex justify-content-end">
+									<!-- My Account -->
+									<div class="dropdown account">
+										<div class="dropdown-toggle" data-toggle="dropdown">
+											My Account
+										</div>
+										<div class="dropdown-menu">									
+											<div class="item">
+												<a href="#" title="Log in to your customer account"><i class="fa fa-cog"></i>My Account</a>
+											</div>
+											<div class="item">
+												<a href="user-login.html" title="Log in to your customer account"><i class="fa fa-sign-in"></i>Login</a>
+											</div>
+											<div class="item">
+												<a href="user-register.html" title="Register Account"><i class="fa fa-user"></i>Register</a>
+											</div>
+											<div class="item">
+												<a href="#" title="My Wishlists"><i class="fa fa-heart"></i>My Wishlists</a>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Language -->
+									<div class="dropdown language">
+										<div class="dropdown-toggle" data-toggle="dropdown">
+											<img src="img/language-en.jpg" alt="Language English">
+										</div>
+										<div class="dropdown-menu">
+											<div class="item">
+												<a href="#" title="Language English"><img src="img/language-en.jpg" alt="Language English"> English</a>
+											</div>
+											<div class="item">
+												<a href="#" title="Language French"><img src="img/language-fr.jpg" alt="Language French"> French</a>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Currency -->
+									<div class="dropdown currency">
+										<div class="dropdown-toggle" data-toggle="dropdown">
+											USD
+										</div>
+										<div class="dropdown-menu">
+											<div class="item">
+												<a href="#" title="USD">USD</a>
+											</div>
+											<div class="item">
+												<a href="#" title="EUR">EUR</a>
+											</div>
+											<div class="item">
+												<a href="#" title="GBP">GBP</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Open Topbar -->
+					<div class="container active">
+						<div id="toggle-topbar"><i class="zmdi zmdi-plus"></i></div>
+					</div>
+				</div>
+				
+				<!-- Header Top -->
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<!-- Search -->
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="form-search">
+									<form action="#" method="get">
+										<input type="text" class="form-input" placeholder="Search">
+										<button type="submit" class="fa fa-search"></button>
+									</form>
+								</div>
+							</div>
+							
+							<!-- Logo -->
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="logo">
+									<a href="index.html">
+										<img class="img-responsive" src="img/logo.png" alt="Logo">
+									</a>
+								</div>
+								
+								<span id="toggle-mobile-menu"><i class="zmdi zmdi-menu"></i></span>
+							</div>
+							
+							<!-- Cart -->
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="block-cart dropdown">
+									<div class="cart-title">
+										<i class="fa fa-shopping-basket"></i>
+										<span class="cart-count">2</span>
+									</div>
+									
+									<div class="dropdown-content">
+										<div class="cart-content">
+											<table>
+												<tbody>
+													<tr>
+														<td class="product-image">
+															<a href="product-detail-left-sidebar.html">
+																<img src="img/product/7.jpg" alt="Product">
+															</a>
+														</td>
+														<td>
+															<div class="product-name">
+																<a href="product-detail-left-sidebar.html">Organic Strawberry Fruits</a>
+															</div>
+															<div>	
+																2 x <span class="product-price">$28.98</span>
+															</div>
+														</td>
+														<td class="action">
+															<a class="remove" href="#">
+																<i class="fa fa-trash-o" aria-hidden="true"></i>
+															</a>
+														</td>
+													</tr>
+													
+													<tr>
+														<td class="product-image">
+															<a href="product-detail-left-sidebar.html">
+																<img src="img/product/6.jpg" alt="Product">
+															</a>
+														</td>
+														<td>
+															<div class="product-name">
+																<a href="product-detail-left-sidebar.html">Organic Strawberry</a>
+															</div>
+															<div>	
+																1 x <span class="product-price">$35.00</span>
+															</div>
+														</td>
+														<td class="action">
+															<a class="remove" href="#">
+																<i class="fa fa-trash-o" aria-hidden="true"></i>
+															</a>
+														</td>
+													</tr>
+													
+													<tr class="total">
+														<td>Total:</td>
+														<td colspan="2">$92.96</td>
+													</tr>
+													
+													<tr>
+														<td colspan="3">
+															<div class="cart-button">
+																<a class="btn btn-primary" href="product-cart.html" title="View Cart">View Cart</a>
+																<a class="btn btn-primary" href="product-checkout.html" title="Checkout">Checkout</a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</div>
+				</div>
+				
+				<!-- Main Menu -->
+				<div id="main-menu">
+					<ul class="menu">
+						<li class="dropdown">
+							<a href="index.html" title="Homepage">Home</a>
+							<div class="dropdown-menu">
+								<ul>
+									<li><a href="index.html" title="Homepage 1">Homepage 1</a></li>
+									<li><a href="home-2.html" title="Homepage 2">Homepage 2</a></li>
+									<li><a href="home-3.html" title="Homepage 3">Homepage 3</a></li>
+									<li><a href="home-4.html" title="Homepage 4">Homepage 4</a></li>
+									<li><a href="home-5.html" title="Homepage 5">Homepage 5</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown">
+							<a href="product-grid-left-sidebar.html" title="Product">Product</a>
+							<div class="dropdown-menu">
+								<ul>
+									<li class="has-image">
+										<img src="img/product/product-category-1.png" alt="Product Category Image">
+										<a href="product-grid-left-sidebar.html" title="Vegetables">Vegetables</a>
+									</li>
+									<li class="has-image">
+										<img src="img/product/product-category-2.png" alt="Product Category Image">
+										<a href="product-grid-left-sidebar.html" title="Fruits">Fruits</a>
+									</li>
+									<li class="has-image">
+										<img src="img/product/product-category-3.png" alt="Product Category Image">
+										<a href="product-grid-left-sidebar.html" title="Bread">Bread</a>
+									</li>
+									<li class="has-image">
+										<img src="img/product/product-category-4.png" alt="Product Category Image">
+										<a href="product-grid-left-sidebar.html" title="Juices">Juices</a>
+									</li>
+									<li class="has-image">
+										<img src="img/product/product-category-5.png" alt="Product Category Image">
+										<a href="product-grid-left-sidebar.html" title="Tea and coffee">Tea and coffee</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown">
+							<a href="#" title="Page">Page</a>
+							<div class="dropdown-menu">
+								<ul>
+									<li class="dropdown-submenu">
+										<a href="product-grid-left-sidebar.html" title="Product List">Product List</a>
+										<div class="dropdown-menu level2">
+											<ul>
+												<li><a href="product-grid-left-sidebar.html" title="Product Grid - Left Sidebar">Product Grid - Left Sidebar</a></li>
+												<li><a href="product-grid-right-sidebar.html" title="Product Grid - Right Sidebar">Product Grid - Right Sidebar</a></li>
+												<li><a href="product-grid-full-width.html" title="Product Grid - Full Width">Product Grid - Full Width</a></li>
+												<li><a href="product-list-left-sidebar.html" title="Product List - Left Sidebar">Product List - Left Sidebar</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="dropdown-submenu">
+										<a href="product-detail-left-sidebar.html" title="Product List">Product Detail</a>
+										<div class="dropdown-menu level2">
+											<ul>
+												<li><a href="product-detail-left-sidebar.html" title="Product Detail - Left Sidebar">Product Detail - Left Sidebar</a></li>
+												<li><a href="product-detail-full-width-1.html" title="Product List - Full Width 1">Product Detail - Full Width 1</a></li>
+												<li><a href="product-detail-full-width-2.html" title="Product List - Full Width 2">Product Detail - Full Width 2</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="product-cart.html" title="Cart">Cart</a>
+									</li>
+									<li>
+										<a href="product-checkout.html" title="Checkout">Checkout</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a href="#" title="User">User</a>
+										<div class="dropdown-menu level2">
+											<ul>
+												<li><a href="user-login.html" title="Login">Login</a></li>
+												<li><a href="user-register.html" title="Register">Register</a></li>
+												<li><a href="#" title="My Account">My Account</a></li>
+												<li><a href="#" title="My Wishlists">My Wishlists</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="page-404.html" title="Page 404">Page 404</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown">
+							<a href="blog-list-left-sidebar-1.html">Blog</a>
+							<div class="dropdown-menu">
+								<ul class="has-sub">
+									<li><a href="blog-list-left-sidebar-1.html" title="Blog List - Left Sidebar 1">Blog List - Left Sidebar 1</a></li>
+									<li><a href="blog-list-left-sidebar-2.html" title="Blog List - Left Sidebar 2">Blog List - Left Sidebar 2</a></li>
+									<li><a href="blog-grid-full-width.html" title="Blog Grid - Full Width">Blog Grid - Full Width</a></li>
+									<li><a href="blog-detail.html" title="Blog Detail">Blog Detail</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li>
+							<a href="page-about-us.html">About Us</a>
+						</li>
+						
+						<li>
+							<a href="page-contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			
+			
+			<!-- Main Content -->
+			<div id="content" class="site-content">
+				<!-- Breadcrumb -->
+				<div id="breadcrumb">
+					<div class="container">
+						<h2 class="title">Our Blog</h2>
+						
+						<ul class="breadcrumb">
+							<li><a href="#" title="Home">Home</a></li>
+							<li><span>Our Blog</span></li>
+						</ul>
+					</div>
+				</div>
+			
+			
+				<div class="container">
+					<div class="row">
+						<!-- Sidebar -->
+						<div id="left-column" class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<!-- Block - Product Categories -->
+							<div class="block product-categories">
+								<h3 class="block-title">Categories</h3>
+								
+								<div class="block-content">
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#vegetables" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.html">Vegetables</a>
+										<div class="sub-category collapse" id="vegetables" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Tomato</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Broccoli</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Cabbage</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Cucumber</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#fruits" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.html">Fruits</a>
+										<div class="sub-category collapse" id="fruits" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Orange</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Apple</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Banana</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Strawberry</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#juices" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.html">Juices</a>
+										<div class="sub-category collapse" id="juices" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Orange Juices</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Tomato Juices</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Apple Juices</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.html">Peaches Juices</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="product-grid-left-sidebar.html">Tea and Coffee</a>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="product-grid-left-sidebar.html">Jam</a>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="product-grid-left-sidebar.html">SeaFood</a>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="product-grid-left-sidebar.html">Fresh Meats</a>
+									</div>
+								</div>
+							</div>
+							
+							
+							<!-- Block - Recent Posts -->
+							<div class="block posts recent-posts">
+								<h3 class="block-title">Recent Posts</h3>
+							
+								<div class="block-content">
+									<div class="post-item">         
+										<a class="post-title" href="blog-detail.html">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor, nisi elit consequat ipsum... </div>
+										<div class="post-readmore"><a href="blog-detail.html">Read more</a></div>
+									</div>
+									
+									<div class="post-item">         
+										<a class="post-title" href="blog-detail.html">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor, nisi elit consequat ipsum... </div>
+										<div class="post-readmore"><a href="blog-detail.html">Read more</a></div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Block - Blog Tags -->
+							<div class="block tags blog-tags">
+								<h3 class="block-title">Blog Tags</h3>
+							
+								<div class="block-content">
+									<ul>
+										<li><a href="#" title="Hot Trend">Hot Trend</a></li>
+										<li><a href="#" title="Jewelry">Jewelry</a></li>
+										<li><a href="#" title="Man">Man</a></li>
+										<li><a href="#" title="Party">Party</a></li>
+										<li><a href="#" title="SamSung">SamSung</a></li>
+										<li><a href="#" title="Shirt Dresses">Shirt Dresses</a></li>
+										<li><a href="#" title="Shoes">Shoes</a></li>
+										<li><a href="#" title="Summer">Summer</a></li>
+										<li><a href="#" title="Sweaters">Sweaters</a></li>
+										<li><a href="#" title="Winter">Winter</a></li>
+										<li><a href="#" title="Woman">Woman</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Block - Banner -->
+							<div class="block banner">
+								<div class="block-content">
+									<div class="effect">
+										<img class="img-responsive" src="img/blog-banner.jpg" alt="Banner">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Page Content -->
+						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<div class="blog-list">
+								<div class="posts-list">
+									<div class="post-item">
+										<div class="post-image">
+											<a href="blog-detail.html">
+												<img class="img-responsive" src="img/blog/blog-1.jpg" alt="Blog Image">
+											</a>
+										</div>
+										<a class="post-title" href="blog-detail.html">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">
+											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
+											<span class="post-readmore"><a href="blog-detail.html">view more</a></span>
+										</div>
+									</div>
+									
+									<div class="post-item">
+										<div class="post-image">
+											<a href="blog-detail.html">
+												<img class="img-responsive" src="img/blog/blog-2.jpg" alt="Blog Image">
+											</a>
+										</div>
+										<a class="post-title" href="blog-detail.html">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">
+											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
+											<span class="post-readmore"><a href="blog-detail.html">view more</a></span>
+										</div>
+									</div>
+									
+									<div class="post-item">
+										<div class="post-image">
+											<a href="blog-detail.html">
+												<img class="img-responsive" src="img/blog/blog-3.jpg" alt="Blog Image">
+											</a>
+										</div>
+										<a class="post-title" href="blog-detail.html">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">
+											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
+											<span class="post-readmore"><a href="blog-detail.html">view more</a></span>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Pagination Bar -->
+								<div class="pagination-bar">
+									<div class="pagination">
+										<ul class="page-list">
+											<li><a href="#" class="prev">Previous</a></li>
+											<li><a href="#" class="current">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#" class="next">Next</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="footer">
+					<!-- Footer Top -->
+					<div class="footer-top">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="block text">
+										<div class="block-content">
+											<a href="index.html" class="logo-footer">
+												<img src="img/logo-2.png" alt="Logo">
+											</a>
+									
+											<div class="contact">
+												<div class="item d-flex">
+													<div class="item-left">
+														<i class="zmdi zmdi-home"></i>
+													</div>
+													<div class="item-right">
+														<span>123 Suspendis matti, VST District, NY Accums, North American</span>
+													</div>
+												</div>
+												<div class="item d-flex">
+													<div class="item-left">
+														<i class="zmdi zmdi-phone-in-talk"></i>
+													</div>
+													<div class="item-right">
+														<span>0123-456-78910<br>0987-654-32100</span>
+													</div>
+												</div>
+												<div class="item d-flex">
+													<div class="item-left">
+														<i class="zmdi zmdi-email"></i>
+													</div>
+													<div class="item-right">
+														<span><a href="mailto:support@domain.com">support@domain.com</a><br><a href="mailto:contact@domain.com">contact@domain.com</a></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="block instagram">
+										<h2 class="block-title">Photo Instagram</h2>
+										
+										<div class="block-content">
+											<div class="row margin-0">
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-1.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-2.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-3.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-4.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-5.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-6.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-7.png" alt="Instagram Image">
+													</a>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
+													<a href="#">
+														<img src="img/instagram-8.png" alt="Instagram Image">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="block newsletter">
+										<h2 class="block-title">Newsletter</h2>
+										
+										<div class="block-content">
+											<p class="description">Sign up for newsletter to receive special offers and exclusive news about FreshMart products</p>
+											<form action="#" method="post">
+												<input type="text" placeholder="Enter Your Email">
+												<button type="submit" class="btn btn-primary">Subscribe</button>
+											</form>
+										</div>
+										</div>
+										
+									<div class="block social">
+										<h2 class="block-title">Follow Us</h2>
+										
+										<div class="block-content">
+											<ul>
+												<li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+												<li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+												<li><a href="#"><i class="zmdi zmdi-dribbble"></i></a></li>
+												<li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Footer Bottom -->
+					<div class="footer-bottom">
+						<div class="payment-intro">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+										<div class="item d-flex">
+											<div class="item-left">
+												<img src="img/home1-payment-1.png" alt="Payment Intro">
+											</div>
+											<div class="item-right">
+												<h3 class="title">Free Shipping item</h3>
+												<div class="content">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+										<div class="item d-flex">
+											<div class="item-left">
+												<img src="img/home1-payment-2.png" alt="Payment Intro">
+											</div>
+											<div class="item-right">
+												<h3 class="title">Secured Payment</h3>
+												<div class="content">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+										<div class="item d-flex">
+											<div class="item-left">
+												<img src="img/home1-payment-3.png" alt="Payment Intro">
+											</div>
+											<div class="item-right">
+												<h3 class="title">Money Back Guarantee</h3>
+												<div class="content">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Copyright -->
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+								<div class="copyright"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></div>
+							</div>
+							
+							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 align-right">
+								<div class="payment">
+									<span>Payment Accept</span>
+									<img src="img/payment.png" alt="Payment">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			<!-- Go Up button -->
+			<div class="go-up">
+				<a href="#">
+					<i class="fa fa-long-arrow-up"></i>
+				</a>
+			</div>
+			
+			<!-- Page Loader -->
+			<div id="page-preloader">
+				<div class="page-loading">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+			</div>
+		</div>
+			
+		<!-- Vendor JS -->
+		<script src="libs/jquery/jquery.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.js"></script>
+		<script src="libs/jquery.countdown/jquery.countdown.js"></script>
+		<script src="libs/nivo-slider/js/jquery.nivo.slider.js"></script>
+		<script src="libs/owl.carousel/owl.carousel.min.js"></script>
+		<script src="libs/slider-range/js/tmpl.js"></script>
+		<script src="libs/slider-range/js/jquery.dependClass-0.1.js"></script>
+		<script src="libs/slider-range/js/draggable-0.1.js"></script>
+		<script src="libs/slider-range/js/jquery.slider.js"></script>
+		<script src="libs/elevatezoom/jquery.elevatezoom.js"></script>
+		
+		<!-- Template CSS -->
+		<script src="js/main.js"></script>
+	</body>
+
+
+</html>
