@@ -1,0 +1,111 @@
+{% extends 'common_code/base.html' %}
+{% block title %} Contact {% endblock title %}
+{% load static %}
+{% block content %}
+			
+			
+			<!-- Main Content -->
+			<div id="content" class="site-content">
+				<!-- Breadcrumb -->
+				<div id="breadcrumb">
+					<div class="container">
+						<h2 class="title">Contact</h2>
+						
+						<ul class="breadcrumb">
+							<li><a href="{% url 'home' %}" title="Home">Home</a></li>
+							<li><span>Contact</span></li>
+						</ul>
+					</div>
+				</div>
+			
+				<div class="container">
+					<div class="contact-page">
+						<div class="contact-info">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="item d-flex">
+										<div class="item-left">
+											<div class="icon"><i class="zmdi zmdi-email"></i></div>
+										</div>
+										<div class="item-right d-flex">
+											<div class="title">Email:</div>
+											<div class="content">
+												<a href="mailto:emukhan130454@gmail.com">support@domain.com</a><br>
+												<a href="mailto:emukhan130454@gmail.com">contact@domain.com</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="item d-flex justify-content-center">
+										<div class="item-left">
+											<div class="icon"><i class="zmdi zmdi-home"></i></div>
+										</div>
+										<div class="item-right d-flex">
+											<div class="title">Address:</div>
+											<div class="content">
+												123 Ashkona, Dhaka District,<br>  Dhaka Division, Bangladesh
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<div class="item d-flex justify-content-end">
+										<div class="item-left">
+											<div class="icon"><i class="zmdi zmdi-phone"></i></div>
+										</div>
+										<div class="item-right d-flex">
+											<div class="title">Holine:</div>
+											<div class="content">
+												0123-456-78910<br>
+												017666666666
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="contact-map">
+							<div id="map"></div>
+							<div class="hidden-lg hidden-md hidden-sm hidden-xs contact-address">815 Sunset Boulevard Ca 70079</div>
+						</div>
+						
+						<div class="contact-intro">
+							<p>“Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit auctor”</p>
+							<img src="{% static 'img/contact-icon.png' %}" alt="Contact Comment">
+						</div>
+						
+						<div class="contact-form form">
+							<form action="#" method="post" enctype="multipart/form-data">
+								<div class="form-group row">
+									<div class="col-md-6">
+										<input type="text" name="name" placeholder="YOUR NAME">
+									</div>
+									
+									<div class="col-md-6">
+										<input type="email" name="email" placeholder="YOUR EMAIL">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<input type="text" name="subject" placeholder="SUBJECT">
+								</div>
+								
+								<div class="form-group">
+									<textarea rows="10" name="content" placeholder="MESSAGE"></textarea>
+								</div>
+								
+								<div class="form-group text-center">
+									<input type="submit" class="btn btn-primary" value="Send Message">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+{% endblock content %}

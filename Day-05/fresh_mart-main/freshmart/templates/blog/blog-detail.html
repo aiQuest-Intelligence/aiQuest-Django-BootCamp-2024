@@ -1,0 +1,395 @@
+{% extends 'common_code/base.html' %}
+{% block title %} Blog {% endblock title %}
+{% load static %}
+{% block content %}
+			
+			
+			<!-- Main Content -->
+			<div id="content" class="site-content">
+				<!-- Breadcrumb -->
+				<div id="breadcrumb">
+					<div class="container">
+						<h2 class="title">5 Best Fruits To Make You Fresh And Healthy</h2>
+						
+						<ul class="breadcrumb">
+							<li><a href="{% url 'home' %}" title="Home">Home</a></li>
+							<li><a href="{% url 'blog' %}" title="Blog">Blog</a></li>
+							<li><span>5 Best Fruits To Make You Fresh And Healthy</span></li>
+						</ul>
+					</div>
+				</div>
+			
+				<div class="container">
+					<div class="row">
+						<!-- Sidebar -->
+						<div id="left-column" class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<!-- Block - Product Categories -->
+							<div class="block product-categories">
+								<h3 class="block-title">Categories</h3>
+								
+								<div class="block-content">
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#vegetables" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="{% url 'vegetable' %}">Vegetables</a>
+										<div class="sub-category collapse" id="vegetables" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="#">Tomato</a>
+											</div>
+											<div class="item">
+												<a href="#">Broccoli</a>
+											</div>
+											<div class="item">
+												<a href="#">Cabbage</a>
+											</div>
+											<div class="item">
+												<a href="#">Cucumber</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#fruits" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="{% url 'fruit' %}">Fruits</a>
+										<div class="sub-category collapse" id="fruits" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="#">Orange</a>
+											</div>
+											<div class="item">
+												<a href="#">Apple</a>
+											</div>
+											<div class="item">
+												<a href="#">Banana</a>
+											</div>
+											<div class="item">
+												<a href="#">Strawberry</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#juices" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="{% url 'juice' %}">Juices</a>
+										<div class="sub-category collapse" id="juices" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="#">Orange Juices</a>
+											</div>
+											<div class="item">
+												<a href="#">Tomato Juices</a>
+											</div>
+											<div class="item">
+												<a href="#">Apple Juices</a>
+											</div>
+											<div class="item">
+												<a href="#">Peaches Juices</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- Bread-->
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#bread" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="{% url 'bread' %}">Bread</a>
+										<div class="sub-category collapse" id="bread" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="#">Organic Bread</a>
+											</div>
+											<div class="item">
+												<a href="#">White Bread</a>
+											</div>
+											<div class="item">
+												<a href="#">Brown Bread</a>
+											</div>
+											<div class="item">
+												<a href="#">Pran Bread</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="{% url 'tea' %}">Tea and Coffee</a>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="#">Jam</a>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="#">SeaFood</a>
+									</div>
+									
+									<div class="item">
+										<a class="category-title" href="#">Fresh Meats</a>
+									</div>
+								</div>
+							</div>
+							
+							
+							<!-- Block - Recent Posts -->
+							<div class="block posts recent-posts">
+								<h3 class="block-title">Recent Posts</h3>
+							
+								<div class="block-content">
+									<div class="post-item">         
+										<a class="post-title" href="#">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor, nisi elit consequat ipsum... </div>
+										<div class="post-readmore"><a href="c">Read more</a></div>
+									</div>
+									
+									<div class="post-item">         
+										<a class="post-title" href="#">5 Best Fruits To Make You Fresh And Healthy</a>
+										<div class="post-info">
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+										</div>
+										<div class="post-description">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor, nisi elit consequat ipsum... </div>
+										<div class="post-readmore"><a href="#">Read more</a></div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Block - Blog Tags -->
+							<div class="block tags blog-tags">
+								<h3 class="block-title">Blog Tags</h3>
+							
+								<div class="block-content">
+									<ul>
+										<li><a href="#" title="Hot Trend">Hot Trend</a></li>
+										<li><a href="#" title="Jewelry">Jewelry</a></li>
+										<li><a href="#" title="Man">Man</a></li>
+										<li><a href="#" title="Party">Party</a></li>
+										<li><a href="#" title="SamSung">SamSung</a></li>
+										<li><a href="#" title="Shirt Dresses">Shirt Dresses</a></li>
+										<li><a href="#" title="Shoes">Shoes</a></li>
+										<li><a href="#" title="Summer">Summer</a></li>
+										<li><a href="#" title="Sweaters">Sweaters</a></li>
+										<li><a href="#" title="Winter">Winter</a></li>
+										<li><a href="#" title="Woman">Woman</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Block - Banner -->
+							<div class="block banner">
+								<div class="block-content">
+									<div class="effect">
+										<img class="img-responsive" src="{% static 'img/blog-banner.jpg' %}" alt="Banner">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Page Content -->
+						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<div class="blog-detail">
+								<div class="post-item">
+									<div class="post-image">
+										<img class="img-responsive" src="{% static 'img/blog/blog-1.jpg' %}" alt="Blog Image">
+									</div>
+									
+									<h1 class="post-title">5 Best Fruits To Make You Fresh And Healthy</h1>
+									
+									<div class="post-content border-bottom">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod, neque nibh pretium lorem, at ornare risus sem et risus. Curabitur pulvinar dui viverra libero lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam libero lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum.</p>
+										<h5>Here, we bring you a look-see:</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod, neque nibh pretium lorem, at ornare risus sem et risus. Curabitur pulvinar dui viverra libero lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive" src="{% static 'img/blog/blog-detail-1.jpg' %}" alt=""></div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive" src="{% static 'img/blog/blog-detail-2.jpg' %}" alt=""></div>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod, neque nibh pretium lorem, at ornare risus sem et risus. Curabitur pulvinar dui viverra libero lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod neque</p>
+									</div>
+									
+									<div class="post-meta border-bottom">
+										<div class="post-info">
+											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
+											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
+											<span class="author item"><i class="zmdi zmdi-account"></i>TivaTheme</span>
+										</div>
+										
+										<div class="post-share">
+											<div class="item">
+												<a href="#"><i class="zmdi zmdi-share" aria-hidden="true"></i><span class="text">Share</span></a>
+											</div>
+											<div class="item">
+												<a href="#"><i class="zmdi zmdi-email" aria-hidden="true"></i><span class="text">Send to a friend</span></a>
+											</div>
+											<div class="item">
+												<a href="#"><i class="zmdi zmdi-print" aria-hidden="true"></i><span class="text">Print</span></a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="post-author d-flex">
+										<div class="author-left">
+											<div class="avatar">
+												<img src="{% static 'img/avatar.jpg' %}" alt="" width="100" height="100">
+											</div>
+										</div>
+										<div class="author-body">
+											<div class="author-meta">
+												<span class="name">John Doe</span> | <span class="role">Administrator</span>
+											</div>
+											<div class="author-info">Look at the sunset, life is amazing, life is beautiful, life is what you make it. To succeed you must believe. When you believe, you will succeed. In life there will be road blocks but we will over come it. Celebrate success right, the only way, apple. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. </div>
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+									
+									<div class="latest-news layout-2">
+										<div class="block-title">
+											<h2 class="title">Related <span>News</span></h2>
+										</div>
+										
+										<div class="block-content">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+													<div class="blog-item">
+														<div class="blog-image">
+															<a href="#" class="zoom-effect">
+																<img src="{% static 'img/blog/blog-1.jpg' %}" alt="Blog Image">
+															</a>		
+														</div>
+														<div class="blog-info">
+															<div class="blog-title"><a href="#">5 Best fruits to make you fresh and healthy</a></div>
+															<div class="blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+													<div class="blog-item">
+														<div class="blog-image">
+															<a href="#" class="zoom-effect">
+																<img src="{% static 'img/blog/blog-2.jpg' %}" alt="Blog Image">
+															</a>
+														</div>
+														<div class="blog-info">
+															<div class="blog-title"><a href="#">5 Best fruits to make you fresh and healthy</a></div>
+															<div class="blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+													<div class="blog-item">
+														<div class="blog-image">
+															<a href="#" class="zoom-effect">
+																<img src="{% static 'img/blog/blog-3.jpg' %}" alt="Blog Image">
+															</a>
+														</div>
+														<div class="blog-info">
+															<div class="blog-title"><a href="#">5 Best fruits to make you fresh and healthy</a></div>
+															<div class="blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="post-reviews reviews">
+										<div class="comments-list">
+											<div class="block-title">
+												<h2 class="title"><span>Comments</span></h2>
+											</div>
+										
+											<div class="item d-flex">
+												<div class="comment-left">
+													<div class="avatar">
+														<img src="{% static 'img/avatar.jpg' %}" alt="" width="70" height="70">
+													</div>
+													<div class="product-rating">
+														<div class="star on"></div>
+														<div class="star on"></div>
+														<div class="star on"></div>
+														<div class="star on"></div>
+														<div class="star on"></div>
+													</div>
+												</div>
+												<div class="comment-body">
+													<div class="comment-meta">
+														<span class="author">Peter</span> - <span class="time">June 02, 2018</span>
+													</div>
+													<div class="comment-content">Look at the sunset, life is amazing, life is beautiful, life is what you make it. To succeed you must believe. When you believe, you will succeed. In life there will be road blocks but we will over come it. Celebrate success right, the only way, apple. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. </div>
+												</div>
+											</div>
+											
+											<div class="item d-flex">
+												<div class="comment-left">
+													<div class="avatar">
+														<img src="{% static 'img/avatar.jpg' %}" alt="" width="70" height="70">
+													</div>
+													<div class="product-rating">
+														<div class="star on"></div>
+														<div class="star on"></div>
+														<div class="star on"></div>
+														<div class="star on"></div>
+														<div class="star"></div>
+													</div>
+												</div>
+												<div class="comment-body">
+													<div class="comment-meta">
+														<span class="author">Merry</span> - <span class="time">June 17, 2018</span>
+													</div>
+													<div class="comment-content">Look at the sunset, life is amazing, life is beautiful, life is what you make it. To succeed you must believe. When you believe, you will succeed. In life there will be road blocks but we will over come it. Celebrate success right, the only way, apple. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. </div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="review-form">
+											<div class="block-title">
+											<h2 class="title">Submit <span>Comment</span></h2>
+											</div>
+											
+											<form action="#" method="post" class="form-validate">
+												<div class="form-group">
+													<div class="text">Your Rating</div>
+													<div class="product-rating">
+														<div class="star"></div>
+														<div class="star"></div>
+														<div class="star"></div>
+														<div class="star"></div>
+														<div class="star"></div>
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<div class="text">You review<sup class="required">*</sup></div>
+													<textarea id="comment" name="comment" cols="45" rows="6" aria-required="true"></textarea>
+												</div>
+												
+												<div class="form-group">
+													<button class="btn btn-primary">Send your review</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+{% endblock content %}			
