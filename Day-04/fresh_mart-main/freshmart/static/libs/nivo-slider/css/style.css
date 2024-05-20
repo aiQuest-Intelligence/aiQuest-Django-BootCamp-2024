@@ -1,0 +1,354 @@
+.tiva-slideshow-wrapper {
+	position: relative;
+    overflow: hidden;
+	z-index: 9;
+}
+
+/* Control Navigation */
+.tiva-slideshow-wrapper .nivo-controlNav {
+	font-size: 0px;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+	padding: 0;
+}
+.tiva-slideshow-wrapper .nivo-controlNav .nivo-control {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background-color: #ebebeb;
+    border-radius: 50px;
+    margin: 0px 4px;
+    cursor: pointer;
+	font-size: 0px;
+}
+.tiva-slideshow-wrapper .nivo-controlNav .nivo-control.active {
+	background-color: #cfa15e;
+}
+
+/* Direction Navigation */
+.tiva-slideshow-wrapper .nivo-directionNav a {
+	display:block;
+	width:40px;
+	height:40px;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.tiva-slideshow-wrapper:hover .nivo-directionNav a { 
+	opacity: 1;
+	z-index: 99999;
+}
+.tiva-slideshow-wrapper a.nivo-nextNav {
+	background-position:-40px 0;
+	right:15px;
+}
+.tiva-slideshow-wrapper a.nivo-prevNav {
+	left:15px;
+}
+
+/* Caption */
+.tiva-slideshow-wrapper .tiva-caption {
+	position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+	z-index: 9999;
+}
+.tiva-slideshow-wrapper .nivoSlider .tiva-caption img {
+	display: inline-block;
+}
+.tiva-slideshow-wrapper .nivo-caption h3 {
+    margin: 10px 0;
+    padding: 8px 0;
+	text-transform: none;
+	line-height: 1.1;
+}
+.tiva-slideshow-wrapper .nivo-caption p {
+    margin: 10px 0;
+    padding: 8px 0;
+	line-height: 1.1;
+}
+.tiva-slideshow-wrapper .tiva-caption .very_large_60 {
+	font-size: 60px;
+	line-height: 60px;
+	color: #333;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.tiva-slideshow-wrapper .tiva-caption .very_large_30 {
+	color: #fff;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.tiva-slideshow-wrapper .tiva-caption .very_large_36 {
+	color: #fff;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.tiva-slideshow-wrapper .tiva-caption .very_large_48 {
+	color: #fff;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.tiva-slideshow-wrapper .tiva-caption .very_large_72 {
+	color: #fff;
+	font-size: 72px;
+	line-height: 72px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.tiva-slideshow-wrapper .tiva-caption .very_large_72 span {
+	font-weight: 300;
+	text-transform: none;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_20 {
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_24 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_24.gray {
+	color: #333;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_24 span {
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	display: inline-block;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_yellow_16 span {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 25px;
+	padding: 2px 15px;
+	background-color: #e6c302;
+	display: inline-block;;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	position: relative;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_16 {
+	font-size: 16px;
+	line-height: 30px;
+	color: #666;
+	margin-bottom: 40px;
+}
+.tiva-slideshow-wrapper .tiva-caption .medium_white_18 {
+	font-size: 18px;
+	line-height: 35px;
+	color: #fff;
+	margin: 30px 0;
+	text-align: center;
+}
+.tiva-slideshow-wrapper .nivo-caption .top-bottom {
+	-webkit-animation-name: bounceInDown;
+	animation-name: bounceInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .top-bottom.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .top-bottom.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .bottom-top {
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .bottom-top.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .bottom-top.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .left-right {
+	-webkit-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .left-right.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .left-right.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .right-left {
+	-webkit-animation-name: bounceInRight;
+	animation-name: bounceInRight;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .right-left.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .right-left.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .roll {
+	-webkit-animation-name: rollIn;
+	animation-name: rollIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .roll.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .roll.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .zoom {
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .zoom.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .zoom.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .rotate {
+	-webkit-animation-name: rotateIn;
+	animation-name: rotateIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .rotate.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .rotate.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .flip-x {
+	-webkit-animation-name: flipInX;
+	animation-name: flipInX;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .flip-x.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .flip-x.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+.tiva-slideshow-wrapper .nivo-caption .flip-y {
+	-webkit-animation-name: flipInY;
+	animation-name: flipInY;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none;
+}
+.tiva-slideshow-wrapper .nivo-caption .flip-y.normal {
+	-webkit-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+}
+.tiva-slideshow-wrapper .nivo-caption .flip-y.slow {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}

@@ -1,0 +1,84 @@
+{% extends 'common_code/base.html' %}
+{% block title %} Cart {% endblock title %}
+{% load static %}
+{% block content %}
+			
+			
+<div class="container my-5">
+	{% comment %} Below Code will be used by add_to_cart view {% endcomment %}
+	{% if messages %}
+	{% for message in messages %}
+	 <p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>{{message}}</p>
+	{% endfor %}
+	{% endif %}
+	<br><br>
+	<div class="row">
+	 <h1 class="text-center mb-5">Shopping Cart</h1>
+	 <div class="col-sm-8">
+	 <div class="card">
+	  <div class="card-body">
+	   <h3>Cart Items</h3>
+	   {% for cart in carts %}
+	   <hr>
+	   <div class="row">
+		<div class="col-sm-3 text-center align-self-center"><img src="{{cart.product.product_1_image.url}}" alt="" srcset="" class="img-fluid img-thumbnail shadow-sm" height="150" width="150"> </div>
+		<div class="col-sm-9">
+		 <div>
+		  <h5>{{cart.product.title}}</h5>
+		  <p class="mb-2 text-muted small">{{cart.product.description}}</p>
+		  <div class="my-3">
+		   <label for="quantity">Quantity:</label>
+		   <a class="minus-cart btn" pid="{{cart.product.id}}"><i class="fas fa-minus-square fa-lg"></i></a>
+			 <span id="quantity">{{cart.quantity}}</span>
+		   <a class="plus-cart btn" pid="{{cart.product.id}}"><i class="fas fa-plus-square fa-lg"></i></a>
+		  </div><br> 
+		  <div class="d-flex justify-content-between">
+		   <a class="btn btn-sm btn-secondary mr-3 remove-cart" pid={{cart.product.id}}>Remove item </a>       
+		   <p class="mb-0"><span><strong>TK. {{cart.product.discounted_price}}</strong></span></p>
+		  </div>
+		 </div>
+   
+		</div>
+	   </div>
+   
+	   {% endfor %}
+	  </div>
+	  </div>
+	 </div>
+   
+	 <div class="col-sm-4">
+	  <div class="card">
+	   <div class="card-body">
+		 <h3>The Total Amount of</h3>
+		 <ul class="list-group">
+		  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">Amount<span> Tk. <span id="amount">{{amount|floatformat:2}}</span> </span></li>
+		  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">Shipping cost.<span> TK. 70.00</span></li>
+		  <hr>
+		  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+		   <div>
+			  <strong>Total </strong> <small> (including VAT)</small>
+			</div>
+			<span><strong> TK. </strong><strong id="totalamount"> {{totalamount|floatformat:2}}</strong></span>
+		  </li>
+		 </ul>
+		 <div class="d-grid"><a href="{% url 'checkout' %}" class="btn btn-danger fw-bold">Place Order</a></div>
+	   </div>
+	  </div>
+	 </div>
+	 
+	</div>
+   </div>
+   <div class="container">
+	<div class="row">
+	 <div class="col-sm-8">
+	  <div class="card">
+	   <div class="card-body">
+		 <!--<h5 class="mb-4">We accept</h5>-->
+		 <img src="{% static 'app/images/payment.png' %}" alt="" class="img-fluid">
+	   </div>
+	 </div>
+	 </div>
+	</div>
+   </div>
+			
+{% endblock content %}						
