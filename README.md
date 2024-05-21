@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AIQuest Django Bootcamp 2024</title>
 </head>
 <body>
   <h1>AIQuest Django Bootcamp 2024</h1>
